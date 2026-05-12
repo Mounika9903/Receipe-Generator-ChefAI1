@@ -1,16 +1,61 @@
-# React + Vite
+# 👨‍🍳 ChefAI - AI Recipe Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ChefAI is a modern web application built with **React** and **Vite** that uses the power of **Google Gemini AI** to generate personalized, delicious recipes based on the ingredients you have on hand, your preferred meal type, and any dietary restrictions!
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Ingredient-Based Suggestions**: Simply type in what you have in your fridge or pantry.
+- **Meal Type Selection**: Choose whether you want Breakfast, Lunch, Dinner, or a Snack.
+- **Dietary Restrictions**: Accommodates various diets (e.g., Vegan, Gluten-Free, Keto, etc.).
+- **AI-Powered**: Uses Google's advanced `gemini-2.5-flash` model to act as your personal expert chef.
+- **Beautiful Formatting**: Recipes are neatly formatted with prep times, clear ingredients lists, step-by-step instructions, and chef's tips.
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React.js, Vite
+- **AI Integration**: Google Generative AI (`@google/generative-ai`)
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- A Google Gemini API Key
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd "Receipe GEnerator- ChefAI"
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Environment Variables:**
+   - Create a `.env` file in the root of the project.
+   - Add your Google Gemini API key:
+     ```env
+     VITE_GEMINI_API_KEY=your_api_key_here
+     ```
+   *(Note: Ensure `.env` is added to your `.gitignore` to prevent leaking your API key!)*
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app:**
+   Navigate to `http://localhost:5173` in your browser.
+
+## ⚠️ Security Note
+Never push your actual API keys to a public GitHub repository. Ensure your API key is kept secure and that your `.env` file is never committed to version control.
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## 📝 License
+This project is licensed under the MIT License.
